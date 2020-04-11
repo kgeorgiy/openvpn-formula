@@ -16,7 +16,8 @@ extend:
       file.managed:
         - context:
             name: {{ name }}
-            config: {{ config }}
+            type: {{ type }}
+            config: {{ config | json }}
             user: {{ map.user }}
             group: {{ map.group }}
 
